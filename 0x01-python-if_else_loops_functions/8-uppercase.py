@@ -2,8 +2,8 @@
 def uppercase(str):
     newstr = ''
     for c in str:
-        if ord(c) >= ord('a') and ord(c) >= ord('z'):
+        if ord(c) in range(97,122):
             newstr += chr(ord(c) - 32)
-        else
+        else:
             newstr += c
     print(newstr)
