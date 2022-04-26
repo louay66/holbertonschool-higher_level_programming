@@ -5,5 +5,5 @@ def uppercase(str):
         if ord(c) >= ord('a') and ord(c) >= ord('z'):
             newstr += chr(ord(c) - 32)
         else
-        newstr += c
+            newstr += c
     print(newstr)
