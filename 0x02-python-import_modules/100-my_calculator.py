@@ -12,7 +12,7 @@ if __name__ == "__main__":
             res = add(a, b)
             print("{} + {} = {}".format(a, b, res))
         elif argv[2] == '-':
-            res = mul(a, b)
+            res = sub(a, b)
             print("{} - {} = {}".format(a, b, res))
         elif argv[2] == '*':
             res = mul(a, b)
