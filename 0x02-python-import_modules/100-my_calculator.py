@@ -6,18 +6,19 @@ if __name__ == "__main__":
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
     else:
+        opprtor = argv[2]
         a = int(argv[1])
         b = int(argv[3])
-        if argv[2] == '+':
+        if opprtor == '+':
             res = add(a, b)
             print("{} + {} = {}".format(a, b, res))
-        elif argv[2] == '-':
+        elif opprtor == '-':
             res = sub(a, b)
             print("{} - {} = {}".format(a, b, res))
-        elif argv[2] == '*':
+        elif opprtor == '*':
             res = mul(a, b)
             print("{} * {} = {}".format(a, b, res))
-        elif argv[2] == '/':
+        elif opprtor == '/':
             res = div(a, b)
             print("{} / {} = {}".format(a, b, res))
         else:
