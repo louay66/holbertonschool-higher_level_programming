@@ -1,5 +1,5 @@
-#Python - Exceptions
-###General
+# Python - Exceptions
+### General
 
    * Why Python programming is awesome
    * What’s the difference between errors and exceptions
