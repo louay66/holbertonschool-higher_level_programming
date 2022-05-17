@@ -13,9 +13,15 @@ class Square:
         self.__size = size
 
     def area(self):
+        """area
+        return area of squear
+        """
         return self.__size * self.__size
 
     def my_print(self):
+        """my_print
+        return rint of squear
+        """
         if self.__siz == 0:
             print()
         else:
