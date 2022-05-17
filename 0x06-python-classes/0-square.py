@@ -2,6 +2,7 @@
 """This is a square
 """
 
+
 class Square:
     """Represents an empty square."""
     pass
