@@ -21,7 +21,7 @@ class Square:
         """my_print
         return rint of squear
         """
-        if self.__siz == 0:
+        if self.__size == 0:
             print()
         else:
             for i in range(0, self.__size):
