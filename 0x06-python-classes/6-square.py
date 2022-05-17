@@ -9,6 +9,13 @@ class Square:
 
     def __init__(self, size=0, position=(0, 0)):
         self.__size = size
+
+        if type(position) is not tuple or len(position) != 2:
+            raise TypeError('position must be a tuple of 2 positive integers')
+        if type(position[0]) is not int or type(position[1]) is not int:
+            raise TypeError('position must be a tuple of 2 positive integers')
+        if position[0] < 0 or position[1] < 0:
+            raise TypeError('position must be a tuple of 2 positive integers')
         self.__position = position
 
     def area(self):
@@ -22,16 +29,17 @@ class Square:
         return rint of squear
         """
         if self.__size == 0:
-            print()
-        else:
-            for x in range(0, self.__position[1]):
-                print()
-            for i in range(0, self.__size):
-                for t in range(0, self.__position[0]):
-                    print(" ", end="")
-                for j in range(0, self.__size):
-                    print("#", end="")
-                print()
+            print("")
+            return
+
+        for x in range(0, self.__position[1]):
+            print("")
+        for i in range(0, self.__size):
+            for t in range(0, self.__position[0]):
+                print(" ", end="")
+            for j in range(0, self.__size):
+                print("#", end="")
+            print("")
 
     @property
     def size(self):
