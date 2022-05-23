@@ -86,9 +86,10 @@ class Rectangle:
             return rect_1
         elif ara1 < ara2:
             return rect_2
-
     @classmethod
     def square(cls, size=0):
-        """ Method that returns a new instance of Rectangle class
+        """square classmethod
+        this classmethod will return a new rectange with size
+        as width and height
         """
         return cls(size, size)
