@@ -8,11 +8,12 @@ class Rectangle:
     """
     def __init__(self, width=0, height=0):
 
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
     def __str__(self):
-
+        """__str__ method
+        """
         rec_str = ""
 
         if self.__width == 0 or self.__height == 0:
@@ -22,7 +23,7 @@ class Rectangle:
             for i in range(self.__width):
                 rec_str += '#'
             rec_str += '\n'
-        return rec_str
+        return rec_str[:-1]
 
     def area(self):
         return self.__width * self.__height
