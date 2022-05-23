@@ -12,9 +12,12 @@ class Rectangle:
         self.__height = height
 
     def __str__(self):
+
+        rec_str = ""
+
         if self.__width == 0 or self.__height == 0:
-            return ''
-        rec_str = ''
+            return rec_str
+
         for i in range(self.__height):
             for i in range(self.__width):
                 rec_str += '#'
