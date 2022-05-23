@@ -18,14 +18,14 @@ class Rectangle:
     def __str__(self):
         """ print the rectangle with the character #
         """
+        rec_str = ""
         if self.__width == 0 or self.__height == 0:
-            return ''
-        rec_str = ''
+            return rec_str
         for i in range(self.__height):
             for i in range(self.__width):
                 rec_str += str(self.prit_symbol)
             rec_str += '\n'
-        return rec_str
+        return rec_str[:-1]
 
     def __repr__(self):
         """should return a string representation of
