@@ -17,7 +17,7 @@ class Student:
 
     def to_json(self, attrs=None):
 
-        if attrs == None or attrs != list:
+        if attrs is not None or type(attrs) != list:
             return self.__dict__
         else:
             temp = {}
@@ -25,5 +25,5 @@ class Student:
                 if type(elem) != str:
                     return self.__dict__
                 if elem in self.__dict__.keys():
-                    temp[elem] = self__dict[elme]
+                    temp[elem] = self.__dict__[elem]
             return temp
