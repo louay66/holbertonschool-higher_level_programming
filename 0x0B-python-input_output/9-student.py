@@ -2,8 +2,13 @@
 """a class Student that defines a student by"""
 
 
-class student:
-    """class student"""
+class Student:
+    """class student
+        Public attributes:
+            - first_name
+            - last_name
+            - age
+    """
 
     def __init__(self, first_name, last_name, age):
         self.first_name = first_name
