@@ -8,7 +8,14 @@ class Rectangle(Base):
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
-
+        """ Init method
+            Args:
+                width(int): width of rectangle
+                height(int): height of rectangle
+                x(int): x
+                y(int): y
+                id(int): id inherited from Base
+        """
         self.width = width
         self.height = height
         self.x = x
