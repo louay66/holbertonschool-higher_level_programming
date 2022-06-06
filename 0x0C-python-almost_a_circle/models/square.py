@@ -10,6 +10,7 @@ class Square(Rectangle):
     def __init__(self, size, x=0, y=0, id=None):
         """init method"""
 
+        self.size = size
         super().__init__(size, size, x, y, id)
 
     @property
@@ -30,8 +31,8 @@ class Square(Rectangle):
     def __str__(self):
         """__str__method"""
 
-        return "[Square] ({}) {}/{} - {}\
-                ".format(self.id, self.x, self.y, self.size)
+        return "[Square] ({}) {}/{} - {}".format(
+                self.id, self.x, self.y, self.size)
 
     def update(self, *args, **kwargs):
         """update method"""
