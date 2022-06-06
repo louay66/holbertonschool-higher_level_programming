@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 """As you know, a Square is a special Rectangle, so it makes sense
 this class Square inherits from Rectangle"""
-
-
 from models.rectangle import Rectangle
 
 
