@@ -8,6 +8,7 @@ class Square(Rectangle):
     """ class inhert from class rectangle"""
 
     def __init__(self, size, x=0, y=0, id=None):
+        """init method"""
 
         self.size = size
         super().__init__(width=size, height=size, x=x, y=y, id=id)
@@ -28,11 +29,14 @@ class Square(Rectangle):
         self.height = value
 
     def __str__(self):
+        """__str__method"""
 
         return "[Square] ({}) {}/{} - {}\
                 ".format(self.id, self.x, self.y, self.size)
 
     def update(self, *args, **kwargs):
+        """update method"""
+
         if args is not None and len(args) != 0:
             if len(args) >= 1:
                 if type(args[0]) is not int and args[0] is not None:
@@ -58,6 +62,7 @@ class Square(Rectangle):
                     self.y = value
 
     def to_dictionary(self):
+        """dictionary"""
 
         my_dict = {'id': self.id, 'x': self.x, 'size': self.size, 'y': self.y}
         return my_dict
