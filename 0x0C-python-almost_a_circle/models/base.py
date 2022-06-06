@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """This class will be the “base” of all other classes in this project"""
 import json
+from os import path
 
 
 class Base:
@@ -54,13 +55,10 @@ class Base:
     @classmethod
     def load_from_file(cls):
         res = []
-        with open(cls.__name__ + ".json", mode="r") as read_file:
-            text = read_file.read()
+        if path.exists(cls.__name__ + ".json"):
+            with open(cls.__name__ + ".json", mode="r") as read_file:
+                text = cls.from_json_string(read_file.read())
 
-        text = cls.from_json_string(text)
-        for i in text:
-            if type(i) == dict:
+            for i in text:
                 res.append(cls.create(**i))
-            else:
-                res.append(i)
         return res
