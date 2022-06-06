@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Create a Rectangle class, inheriting from Base"""
-
 from models.base import Base
 
 
