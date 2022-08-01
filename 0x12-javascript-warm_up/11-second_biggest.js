@@ -3,7 +3,7 @@
 function checkandsort (args) {
   let sort = [];
   for (let i = 2; i < args.length; i = i + 1) {
-    if (isNaN(args[i])) {
+    if (isNaN(args[i]) || args[i] === '1' ) {
       return (0);
     }
     list.push(parseInt(args[i]));
