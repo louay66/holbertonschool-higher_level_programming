@@ -12,9 +12,7 @@ function checkandsort (args) {
   return sort[(sort.length - 2)];
 }
 const list = [];
-if (process.argv[2] === '1' && process.argv[3] === undefined) {
-  console.log(0);
-} else if (process.argv[2] === undefined) {
+if (process.argv.length <= 3) {
   console.log(0);
 } else {
   console.log(checkandsort(process.argv));
