@@ -8,7 +8,7 @@ class Square extends Rectangle {
   }
 
   charPrint (c) {
-    if (c === undefined) {
+    if (!c) {
       for (let i = 0; i < this.height; i++) {
         for (let i = 0; i < this.width; i++) {
           process.stdout.write('X');
@@ -18,7 +18,7 @@ class Square extends Rectangle {
     } else {
       for (let i = 0; i < this.height; i++) {
         for (let i = 0; i < this.width; i++) {
-          process.stdout.write('c');
+          process.stdout.write(c);
         }
         console.log();
       }
