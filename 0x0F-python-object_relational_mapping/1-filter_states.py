@@ -13,7 +13,7 @@ if __name__ == "__main__":
 
     cur = db.cursor()
     cur.execute("SELECT * FROM states ORDER BY id ASC")
-    rows = cursor.fetchall()
+    rows = cur.fetchall()
     for row in rows:
         if (row[1][0] == 'N'):
             print(row)
