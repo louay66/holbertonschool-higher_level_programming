@@ -23,7 +23,6 @@ if __name__ == "__main__":
     session.add(NewState)
     for state in session.query(State).order_by(State.id).all():
         if (state.name == 'Louisiana'):
-            port = True
             print("{}".format(state.id))
     session.commit()
     session.close()
